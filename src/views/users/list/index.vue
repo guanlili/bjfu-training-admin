@@ -28,6 +28,10 @@
           <span>{{ userSexEnums[scope.row.userSex] }}</span>
         </template>
       </el-table-column>
+      <el-table-column label="身份证号码" prop="idCard"/>
+      <el-table-column label="单位名称" prop="company"/>
+      <el-table-column label="邮箱地址" prop="email"/>
+
       <el-table-column label="备注" prop="remark"/>
       <el-table-column label="注册时间" prop="gmtCreate" :min-width="120"/>
       <el-table-column label="状态">

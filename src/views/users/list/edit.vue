@@ -12,6 +12,17 @@
       <el-form-item class="form-group" label="用户年龄" prop="userAge">
         <el-input-number v-model="formModel.data.userAge" maxlength="500"></el-input-number>
       </el-form-item>
+
+      <el-form-item class="form-group" label="身份证号码" prop="idCard">
+        <el-input v-model="formModel.data.idCard" maxlength="100" show-word-limit></el-input>
+      </el-form-item>
+      <el-form-item class="form-group" label="单位名称" prop="company">
+        <el-input v-model="formModel.data.company" maxlength="100" show-word-limit></el-input>
+      </el-form-item>
+      <el-form-item class="form-group" label="电子邮件" prop="email">
+        <el-input v-model="formModel.data.email" maxlength="100" show-word-limit></el-input>
+      </el-form-item>
+      
       <el-form-item class="form-group" label="备注" prop="remark">
         <el-input v-model="formModel.data.remark" maxlength="100" show-word-limit></el-input>
       </el-form-item>
