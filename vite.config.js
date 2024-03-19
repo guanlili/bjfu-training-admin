@@ -41,7 +41,7 @@ export default defineConfig({
     port: 9528, // 服务端口
     proxy: { // 代理
       '/gateway': {
-        target: 'http://localhost:7700',
+        target: 'http://49.232.156.221:7700',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/gateway/, '')
       }
